@@ -1,5 +1,5 @@
 import './App.css'
-import Kochbuch from "./Kochbuch.jsx";
+import Kochbuch from "./Components/Kochbuch.jsx";
 
 function App() {
     return (
