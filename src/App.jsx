@@ -1,9 +1,11 @@
 import './App.css'
 import Kochbuch from "./Components/Kochbuch.jsx";
+import Header from "./Components/Header.jsx";
 
 function App() {
     return (
-        <div className="h-screen flex flex-col items-center justify-center bg-blue-300">
+        <div id="main" className="bg-blue-300 h-full">
+            <Header />
             <Kochbuch/>
         </div>
     );
