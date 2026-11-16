@@ -1,1 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Handlee&family=Leckerli+One&family=Pacifico&family=Parisienne&display=swap');
 @import "tailwindcss";
+
+@layer base {
+    html {
+        font-family: "Handlee", cursive;
+    }
+}
+
+@layer components {
+    .button-style {
+        @apply
+        px-6
+        py-2
+        rounded-full
+        transition-all
+        duration-300
+        hover:bg-blue-100
+        hover:text-blue-700
+        hover:scale-105
+    }
+}
+
