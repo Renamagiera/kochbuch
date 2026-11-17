@@ -2,7 +2,7 @@ import '../App.css';
 
 export default function Rezeptkarte() {
     return (
-        <div className="bg-white p-5 flex flex-col w-11/12 shadow-lg rounded-2xl mb-5 md:px-20">
+        <div className="bg-white p-5 flex flex-col w-11/12 shadow-lg rounded-2xl mb-5 md:px-20 xl:w-9/12">
             <h1 className="p-1 py-4 font-bold text-2xl text-center">Polnische Gurkensuppe</h1>
             <hr className="border-1 border-blue-200"/>
             <div className="flex flex-col lg:flex-row lg:flex-wrap">

@@ -31,7 +31,7 @@ export default function NavBar() {
     return (
         <div ref={dropdownRef} className="sticky top-0">
             <nav className="bg-blue-400 shadow-lg mx-6 mt-4 py-3 relative">
-                <div className="flex text-lg mx-5">
+                <div className="flex text-2xl mx-5 md:text-lg">
                     <div className="mr-auto md:hidden">
                         <button onClick={handleOpen} className="button-style">Menü</button>
                     </div>
