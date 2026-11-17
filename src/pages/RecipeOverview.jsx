@@ -1,10 +1,9 @@
 import '../App.css';
-import Rezeptkarte from "../Components/Rezeptkarte.jsx";
 
 export default function RecipeOverview() {
     return (
-        <div className="flex-1 flex justify-center items-center">
-            <Rezeptkarte />
+        <div className="flex-1 flex justify-center items-center text-6xl text-white">
+            Übersicht
         </div>
     )
 }
