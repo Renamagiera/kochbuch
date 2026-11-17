@@ -40,7 +40,7 @@ export default function Rezeptkarte() {
                 </div>
                 <div id="instructions" className="p-4 basis-2/5">
                     <h2 className="font-bold pb-3">Zubereitung</h2>
-                    <p className="p-1">
+                    <div className="p-1">
                         <ul className="instructions-style">
                             <li>
                                 <h2>Schritt 1</h2>
@@ -76,7 +76,7 @@ export default function Rezeptkarte() {
                                 </p>
                             </li>
                         </ul>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
