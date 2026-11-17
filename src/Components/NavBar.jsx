@@ -1,17 +1,52 @@
 import '../App.css';
 import {NavLink} from "react-router";
-import {useState} from "react";
+import {useState, useRef, useEffect} from "react";
+
 
 export default function NavBar() {
 
-    const [open, setOpen] = useState(false);
+/*    const [open, setOpen] = useState(false);
+    const dropdownRef = useRef(null);
 
     const handleOpen = () => {
         setOpen(!open);
     };
 
+    const handleClickOutside = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            handleOpen(false);
+        }
+    };
+
+    if (open) {
+        document.addEventListener('mousedown', handleClickOutside);
+    }*/
+
+    const [open, setOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    const handleOpen = () => {
+        setOpen(!open);
+    };
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setOpen(false);
+            }
+        }
+
+        if (open) {
+            document.addEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [open]);
+
     return (
-        <div className="sticky top-0">
+        <div ref={dropdownRef} className="sticky top-0">
             <nav className="bg-blue-400 shadow-lg mx-6 mt-4 py-3 relative">
                 <div className="flex text-lg mx-5">
                     <div className="mr-auto md:hidden">
