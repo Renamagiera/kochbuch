@@ -3,8 +3,8 @@ import {NavLink} from "react-router";
 
 export default function NavBar() {
     return (
-        <nav className="py-3 bg-blue-400 shadow-lg rounded-2xl mx-6 mt-4 sticky top-0">
-            <div className="flex text-lg">
+        <nav className="bg-blue-400 shadow-lg rounded-2xl sticky top-0 mx-6 mt-4 py-3">
+            <div className="flex text-lg mx-5">
                 <div className="mr-auto flex items-center justify-start">
                     <NavLink to="/" className="button-style">Home</NavLink>
                     <NavLink to="/overview" className="button-style">Übersicht</NavLink>
