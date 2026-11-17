@@ -20,5 +20,15 @@
         hover:text-blue-700
         hover:scale-105
     }
+
+    .ingredients-style li {
+        @apply
+        pb-1
+    }
+
+    .instructions-style li {
+        @apply
+        pb-3
+    }
 }
 
