@@ -5,23 +5,6 @@ import {useState, useRef, useEffect} from "react";
 
 export default function NavBar() {
 
-/*    const [open, setOpen] = useState(false);
-    const dropdownRef = useRef(null);
-
-    const handleOpen = () => {
-        setOpen(!open);
-    };
-
-    const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-            handleOpen(false);
-        }
-    };
-
-    if (open) {
-        document.addEventListener('mousedown', handleClickOutside);
-    }*/
-
     const [open, setOpen] = useState(false);
     const dropdownRef = useRef(null);
 
